@@ -1,2 +1,29 @@
 請運用課程中所學知識技能，加一點創意變化，可新增元件或電器，創作自己的作品。須完成程式碼，並可正常運作。完成實作作品請自行拍照存檔。
 完成期限：108年12月31日
+int LED1=2;
+int LED2=5;
+int LED3=6;
+void setup(){
+pinMode(LED1,OUTPUT);
+pinMode(LED2,OUTPUT);
+pinMode(LED3,OUTPUT);
+}
+void loop() {
+  digitalWrite(LED1,HIGH);
+  digitalWrite(LED2,LOW);
+  digitalWrite(LED3,LOW);
+  delay(1000);
+  digitalWrite(LED1,LOW);
+  digitalWrite(LED3,LOW);
+  digitalWrite(LED2,HIGH);
+  delay(1000);
+  digitalWrite(LED2,LOW);
+  digitalWrite(LED3,HIGH);
+  digitalWrite(LED1,LOW);
+  delay(1000);
+  digitalWrite(LED1,LOW);
+  digitalWrite(LED3,LOW);
+  digitalWrite(LED2,HIGH);
+  delay(1000);
+  }
+
