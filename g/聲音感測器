@@ -1,0 +1,17 @@
+int pin=2;
+int MIC=A0;
+int micVal;
+void setup(){
+  pinMode(MIC,INPUT);
+  pinMode(pin,OUTPUT);
+  Serial.begin(9600);
+}
+void loop(){
+  micVal=analogRead(MIC);
+  if(micVal>500)
+  {digitalWrite(pin,HIGH);}
+  else if(micVal<500)
+  {digitalWrite(pin,LOW);}
+   Serial.println(micVal);
+    delay(500);
+}
