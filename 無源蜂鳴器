@@ -1,0 +1,55 @@
+int pin=6;
+int DO=523;
+int RE=587;
+int ME=659;
+int FA=698;
+int SO=784;
+int LA=880;
+int SI=988;
+void setup() {
+   pinMode(pin,OUTPUT);
+}
+void loop() {
+ tone(pin,DO);
+ delay(500);
+ tone(pin,DO);
+ delay(500);
+ tone(pin,SO);
+ delay(500);
+ tone(pin,SO);
+ delay(500);
+ tone(pin,LA);
+ delay(500);
+ tone(pin,LA);
+ delay(500);
+ tone(pin,DO);
+ delay(500);
+ tone(pin,FA);
+ delay(500);
+ tone(pin,FA);
+ delay(500);
+ tone(pin,ME);
+ delay(500);
+ tone(pin,ME);
+ delay(500);
+ tone(pin,RE);
+ delay(500);
+ tone(pin,RE);
+ delay(500);
+ tone(pin,DO);
+ delay(500);
+ tone(pin,SO);
+ delay(500);
+ tone(pin,SO);
+ delay(500);
+ tone(pin,FA);
+ delay(500);
+ tone(pin,FA);
+ delay(500);
+ tone(pin,SO);
+ delay(500);
+ tone(pin,ME);
+ delay(500);
+ tone(pin,RE);
+ delay(500);
+}
